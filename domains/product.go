@@ -30,7 +30,8 @@ type NaverProductEntity struct {
 	AttributeValue string          `json:"attributeValue"`
 	CharacterValue string          `json:"characterValue"`
 	ImageUrl       string          `json:"imageUrl"`
-	Price          string          `json:"price"`
+	PriceString    string          `json:"price"`
+	PriceInt       int             `json:"priceInt"`
 	PriceUnit      string          `json:"priceUnit"`
 	Maker          string          `json:"maker"`
 	Brand          string          `json:"brand"`

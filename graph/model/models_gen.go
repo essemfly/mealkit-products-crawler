@@ -26,12 +26,12 @@ type Product struct {
 	ID             string    `json:"ID"`
 	Name           string    `json:"name"`
 	Imageurl       string    `json:"imageurl"`
-	Price          int       `json:"price"`
+	Price          int       `json:"price" bson:"price"`
 	Maker          *string   `json:"maker"`
 	Brand          *Brand    `json:"brand"`
 	Mallname       string    `json:"mallname"`
 	Mallproducturl string    `json:"mallproducturl"`
-	Deliveryfee    int       `json:"deliveryfee"`
+	Deliveryfee    string    `json:"deliveryfee"`
 	Category       *Category `json:"category"`
 }
 

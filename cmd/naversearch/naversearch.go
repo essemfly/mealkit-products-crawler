@@ -93,6 +93,8 @@ func parseResponse(conn *mongo.Client, resp *http.Response) []interface{} {
 			product.AddMall(conn, result.MallInfo)
 		}
 
+		result.PriceInt = utils.ParsePriceString(result.PriceString)
+
 		products = append(products, result)
 	}
 

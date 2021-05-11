@@ -341,7 +341,7 @@ type Product {
   brand: Brand
   mallname: String!
   mallproducturl: String!
-  deliveryfee: Int!
+  deliveryfee: String!
   category: Category!
 }
 
@@ -1021,9 +1021,9 @@ func (ec *executionContext) _Product_deliveryfee(ctx context.Context, field grap
 		}
 		return graphql.Null
 	}
-	res := resTmp.(int)
+	res := resTmp.(string)
 	fc.Result = res
-	return ec.marshalNInt2int(ctx, field.Selections, res)
+	return ec.marshalNString2string(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Product_category(ctx context.Context, field graphql.CollectedField, obj *model.Product) (ret graphql.Marshaler) {

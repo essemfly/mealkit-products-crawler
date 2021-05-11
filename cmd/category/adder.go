@@ -16,7 +16,7 @@ func addCategories(conn *mongo.Client) {
 			"categoryimageurl": "https://mealkit.s3.ap-northeast-2.amazonaws.com/categories/Hamultang.png",
 		},
 		{
-			"name":             "육계장",
+			"name":             "육개장",
 			"categoryimageurl": "https://mealkit.s3.ap-northeast-2.amazonaws.com/categories/Yukgyejang.png",
 		},
 		{
